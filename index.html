@@ -47,10 +47,35 @@ PHP Web API:<br>
 .rar: <a href="https://dl.dropbox.com/u/79245586/taxi.rar">https://dl.dropbox.com/u/79245586/taxi.rar</a>
 </p>
 
-<p>XML formatting<br>
+<p>Sample XML formatting<br>
 request: /taxi/getNearbyTaxiRequests/?latitude=34.4094609&longitude=-119.8528425<br>
 result:<br>
-<img style='width:130px' src='http://i.imgur.com/1yShUq6.jpg' />
+<img style='width:407px' src='http://i.imgur.com/1yShUq6.jpg' />
+</p>
+
+<p>
+Web API Urls:<br>
+<br>
+// Get all nearby taxi drivers in nearby longitude/latitude<br>
+- http://mozamagic.net/taxi/getNearbyTaxiDrivers/?latitude=34.4094609&longitude=-119.8528425<br>
+<br>
+// Get all nearby taxi requests in nearby longitude/latitude<br>
+http://mozamagic.net/taxi/getNearbyTaxiRequests/?latitude=34.4094609&longitude=-119.8528425<br>
+<br>
+// Get all nearby taxi requests made by person with certain phone number<br>
+http://mozamagic.net/taxi/getTaxiRequestByPhone/?phone=0000000876<br>
+<br>
+// Get all nearby taxi requests made by driver with certain phone number<br>
+http://mozamagic.net/taxi/getTaxiRequestByDriverPhone/?driverPhone=0000000876<br>
+<br>
+// Remove all taxi requests by taxi driver's phone number<br>
+http://mozamagic.net/taxi/deleteTaxiRequestByPhone/?driverPhone=0000000876<br>
+<br>
+// Pickup passenger with certain phone number<br>
+http://mozamagic.net/taxi/pickupPassengerByPhone/?phone=0000000876<br>
+<br>
+// Request Taxi<br>
+http://mozamagic.net/taxi/requestTaxi/?latitude=34.4094609&longitude=-119.8528425&address=addr&phone=0000000876<br>
 </p>
 
 <p>Videos:<br>
